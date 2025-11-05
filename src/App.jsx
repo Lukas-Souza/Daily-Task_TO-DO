@@ -6,6 +6,7 @@ import BoardScreen from './componets/BoardScreen'
 import Btn from './componets/button'
 
 function App() {
+
   const [list, setList] = useState([]);
   const [card, setCard] = useState({
     title: '',

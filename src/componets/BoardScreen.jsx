@@ -2,6 +2,7 @@ import '../index.css'
 import '../componets/button'
 import Btn from '../componets/button'
 function BoardScreen({list}) {
+  
     return(
         <div class="card text-center">
   <div class="card-header">

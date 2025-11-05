@@ -3,14 +3,21 @@ import { useState } from 'react'
 function Btn({title, describe}){
       const [displayBlock, setDisplayBlock] = useState(true);
       const [visibleTextCard, setVisibleTextCard] = useState(false);
-    return(
+    
+  const now = new Date();
+ const hourAndMinutes = now.toLocaleTimeString("pt-BR", {
+  hour: "2-digit",
+  minute: "2-digit"
+});
+
+      return(
         <>
         <section  id='contenderCards' style={{display: displayBlock? "block": "none"}}>
       <div class="cardButton" >
   <div class="card-body">
     <div id='titleCard'>
     <h5 class="card-title">{title}</h5>
-    <p>10/25</p>
+    <p>{now.toLocaleDateString()} - {hourAndMinutes} </p>
  </div>
     <p class="card-text">{describe}</p>
     <div id='SectionButton'>
