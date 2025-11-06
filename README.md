@@ -1,16 +1,46 @@
-# React + Vite
+# 🗓️ DailyTask - ToDo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧭 Objetivo do Projeto
+Com as altas demandas de trabalho, estudos e atividades diárias, torna-se essencial contar com ferramentas que auxiliem na organização das tarefas.  
+Foi com essa ideia que nasceu o **DailyTask**, um diário de tarefas virtual simples e direto, desenvolvido para ajudar o usuário a registrar e controlar suas obrigações do dia a dia.
 
-Currently, two official plugins are available:
+O **DailyTask** possui um design minimalista e intuitivo, priorizando a **eficiência** e a **simplicidade**.  
+Seu principal foco é permitir a **criação** e **remoção** de registros de tarefas, sem distrações ou complexidade desnecessária.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+- **React** (com o framework **Vite**)  
+- **Bootstrap** (para estilização)  
 
-## React Compiler
+## Funcionalidades Principais
+- **Adicionar tarefas** com título e descrição  
+- **Remover tarefas** quando concluídas ou não necessárias    
+- **Interface simples e responsiva** desenvolvida com Bootstrap  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🏗️ Estrutura do Projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+````
+DailyTask/
+│
+├── node_modules/
+│
+├── src/
+│ ├── components/
+│ │ ├── BoardScreen.jsx # Tela principal onde as tarefas são exibidas
+│ │ └── button.jsx # Componente de botão reutilizável
+│ │
+│ ├── App.jsx # Estrutura principal do aplicativo
+│ ├── index.css # Estilos globais
+│ ├── main.jsx # Ponto de entrada do React
+│
+├── .gitignore # Arquivos ignorados pelo Git
+├── eslint.config.js # Configuração de lint do projeto
+├── index.html # Estrutura HTML principal
+├── package.json # Dependências e scripts do projeto
+├── package-lock.json # Versões fixas das dependências
+├── README.md # Documentação do projeto
+└── vite.config.js # Configuração do Vite
+````
+
+
