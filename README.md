@@ -23,8 +23,7 @@ Seu principal foco é permitir a **criação** e **remoção** de registros de t
 ````
 DailyTask/
 │
-├── node_modules/
-│
+|
 ├── src/
 │ ├── components/
 │ │ ├── BoardScreen.jsx # Tela principal onde as tarefas são exibidas
